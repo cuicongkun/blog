@@ -55,11 +55,12 @@ export default defineUserConfig<DefaultThemeOptions>({
       "/": {
         navbar,
         sidebar,
-        repo: 'cuicongkun/myblog',
+        repo: 'cuicongkun/blog',
+        docsDir: 'docs',
         // page meta
-        editLinkText: "在 GitHub 上编辑此页",
-        lastUpdatedText: "上次更新",
-        contributorsText: "贡献者",
+        editLinkText: "发现问题，您可以在 GitHub 上编辑此页面内容，感谢您的贡献！",
+        lastUpdatedText: "Last update",
+        contributorsText: "Contributor",
 
         // custom containers
         tip: "提示",

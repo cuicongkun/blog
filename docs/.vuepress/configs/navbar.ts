@@ -1,46 +1,56 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { NavbarConfig } from "@vuepress/theme-default";
 
 export const navbar: NavbarConfig = [
   {
-    text: 'ECMAScript',
-    link: '/ECMAScript/',
+    text: "首页",
+    link: "/",
   },
   {
-    text: 'Css',
+    text: "ECMAScript",
+    link: "/es/",
+  },
+  {
+    text: "深入 Css",
     children: [
       {
-        text: 'Css3',
+        text: "特性学习",
         children: [
-          '/Css/Css3'
+          {
+            text: "核心概念",
+            link: "/css/concepts.md",
+          },
+          {
+            text: "珍藏属性",
+            link: "/css/attribute.md",
+          },
         ],
       },
       {
-        text: 'Sass',
+        text: "预处理语言",
         children: [
-          '/Css/Sass/jupang.md'
+          {
+            text: "Scss 预处理语言",
+            link: "/css/scss/",
+          },
         ],
       },
       {
-        text: 'Less',
+        text: "病鬼开药店",
         children: [
-          '/Css/Sass/jupang.md',
+          {
+            text: "一些作品",
+            link: "/css/scss/",
+          },
         ],
       },
     ],
   },
   {
-    text: '规范化开发',
-    children: [
-      {
-        text: '常用功能',
-        children: [
-          '/Normalization/'
-        ],
-      }
-    ],
+    text: "规范化开发",
+    link: "/normalization/",
   },
   {
-    text: '关于我',
-    link: '/cuicongkun.md'
+    text: "关于我",
+    link: "/cuicongkun.md",
   },
-]
+];
