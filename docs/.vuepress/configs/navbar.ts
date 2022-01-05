@@ -7,7 +7,21 @@ export const navbar: NavbarConfig = [
   },
   {
     text: "ECMAScript",
-    link: "/es/",
+    children: [
+      {
+        text: "特性学习",
+        children: [
+          {
+            text: "灵魂拷问",
+            link: "/es/problems.md",
+          },
+          {
+            text: "珍藏属性",
+            link: "/es/attribute.md",
+          },
+        ],
+      },
+    ],
   },
   {
     text: "深入 Css",
@@ -52,5 +66,9 @@ export const navbar: NavbarConfig = [
   {
     text: "关于我",
     link: "/cuicongkun.md",
+  },
+  {
+    text: "VLOG",
+    link: "/vlog/",
   },
 ];

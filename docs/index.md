@@ -1,4 +1,4 @@
-# 曳尾涂中 模块化 CommonJs、ESM 格式介绍
+# 曳尾涂中 互联网的门槛会慢慢变高。 模块化 CommonJs、ESM 格式介绍
 
 CommonJs 模块化格式主要针对服务端， nodejs 就是该规范的实践者。ECMA Script Module(ESM)是在 ES6 语言层面提出的一种模块化标准。主要针对浏览器端
 

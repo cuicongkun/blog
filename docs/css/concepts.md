@@ -189,3 +189,121 @@
 ```
 
 ## 选择器的伪类
+
+类似 `:active` `:hover` `:hover` 等这种伪类请去参考链接中温习掌握 [参考链接](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes)
+
+值得注意的是：掌握好`:nth-child(n)` `:lang(值)` 等伪类选择器可以很大程度上提供代码质量：
+
+<CodeGroup>
+<CodeGroupItem title="一般般的写法" active>
+
+```html:no-line-numbers
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello, Customer!</title>
+    <style>
+      .li-1 {
+        background: red;
+      }
+      .li-2 {
+        background: yellow;
+      }
+      .li-3 {
+        background: blue;
+      }
+      .li-other {
+        background: blueviolet;
+      }
+      .is-me {
+        background: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="li-1">别人的排名是1</li>
+      <li class="li-2">别人的排名是2</li>
+      <li class="li-3">别人的排名是3</li>
+      <li class="li-other">别人的排名是4</li>
+      <li class="li-other">别人的排名是5</li>
+      <li class="li-other is-me">我的排名是6</li>
+      <li class="li-other">别人的排名是7</li>
+      <li class="li-other">别人的排名是8</li>
+    </ul>
+  </body>
+</html>
+
+
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="优雅的写法">
+
+```html:no-line-numbers
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello, Customer!</title>
+    <style>
+      li {
+        background: blueviolet;
+      }
+      li:nth-child(1) {
+        background: red;
+      }
+      li:nth-child(2) {
+        background: yellow;
+      }
+      li:nth-child(3) {
+        background: blue;
+      }
+      li:lang(is-me) {
+        background: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>别人的排名是1</li>
+      <li>别人的排名是2</li>
+      <li>别人的排名是3</li>
+      <li>别人的排名是4</li>
+      <li>别人的排名是5</li>
+      <li lang="is-me">我的排名是6</li>
+      <li>别人的排名是7</li>
+      <li>别人的排名是8</li>
+    </ul>
+  </body>
+</html>
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
+## 继承和层叠
+- 继承是指当你 **没有为元素指定属性值时** 该如何计算值
+- 层叠是指当你 **为元素指定多个相同属性时** 该如何计算
+```html:no-line-numbers
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello, Customer!</title>
+    <style>
+      body{
+        color:green
+      }
+      .special {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>我继承了body,我属于继承</div>
+    <div class="special">我虽然继承了body，但通过层叠规则我变成了红色~</div>
+  </body>
+</html>
+
+```
