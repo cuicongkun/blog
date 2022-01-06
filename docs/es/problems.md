@@ -221,7 +221,7 @@ if (value !== null && value !== undefined && value !== "") {
 **能不能优雅一点？ yes 可以的!**
 
 ```js
-if (value ?? "" !== "") {
+if ((value ?? "") !== "") {
   //...
 }
 ```
