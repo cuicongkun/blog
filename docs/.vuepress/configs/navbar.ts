@@ -16,6 +16,10 @@ export const navbar: NavbarConfig = [
             link: "/es/problems.md",
           },
           {
+            text: "工具函数",
+            link: "/es/factory.md",
+          },
+          {
             text: "珍藏属性",
             link: "/es/attribute.md",
           },

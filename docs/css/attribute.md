@@ -51,3 +51,27 @@
 
 - 参考：
   - [Web 开发技术>CSS（层叠样式表）>字体平滑](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-smooth)
+
+## 性能优化
+### contain
+- 语法：
+```css
+{
+  contain: none;
+}
+```
+- 值：`none` `strict` `content` `size` `layout` `style` `paint`
+- 详情：
+
+`contain` 属性允许开发者声明当前元素和它的内容尽可能的独立于 DOM 树的其他部分。这使得浏览器在重新计算布局、样式、绘图、大小或这四项的组合时，只影响到有限的 DOM 区域，而不是整个页面，可以有效改善性能。
+
+这个属性在包含大量独立组件的页面非常实用，它可以防止某个小部件的 CSS 规则改变对页面上的其他东西造成影响。
+
+- 详解：
+  - [Css性能优化 - contain](https://developer.mozilla.org/zh-CN/docs/Web/CSS/contain)
+- 参考：
+  - [Web 开发技术>CSS（层叠样式表）> contain](https://developer.mozilla.org/zh-CN/docs/Web/CSS/contain)
+
+  ### content-visibility
+  ### contain-intrinsic-size
+  ### will-change

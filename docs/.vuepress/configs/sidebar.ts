@@ -6,6 +6,7 @@ export const sidebar: SidebarConfig = {
       text: '特性学习',
       children: [
         '/es/problems.md',
+        '/es/factory.md',
         '/es/attribute.md',
       ],
     }
