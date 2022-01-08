@@ -53,13 +53,17 @@
   - [Web 开发技术>CSS（层叠样式表）>字体平滑](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-smooth)
 
 ## 性能优化
+
 ### contain
+
 - 语法：
+
 ```css
-{
+ {
   contain: none;
 }
 ```
+
 - 值：`none` `strict` `content` `size` `layout` `style` `paint`
 - 详情：
 
@@ -68,10 +72,44 @@
 这个属性在包含大量独立组件的页面非常实用，它可以防止某个小部件的 CSS 规则改变对页面上的其他东西造成影响。
 
 - 详解：
-  - [Css性能优化 - contain](https://developer.mozilla.org/zh-CN/docs/Web/CSS/contain)
+  - [Css 性能优化 - contain](https://developer.mozilla.org/zh-CN/docs/Web/CSS/contain)
 - 参考：
+
   - [Web 开发技术>CSS（层叠样式表）> contain](https://developer.mozilla.org/zh-CN/docs/Web/CSS/contain)
 
   ### content-visibility
+
   ### contain-intrinsic-size
+
   ### will-change
+
+  ## text-align-last
+
+  - 语法：
+
+```html
+<style>
+  .duiqi {
+    display: inline-block;
+    width: 100px;
+    /* 两端对齐，很好用 */
+    text-align-last: justify;
+  }
+</style>
+<div class="app">
+  <ul>
+    <li><span class="duiqi">我的金币：</span>100</li>
+    <li><span class="duiqi">金币：</span>100</li>
+    <li><span class="duiqi">贡献值：</span>100</li>
+  </ul>
+</div>
+```
+
+- 值：`auto` `left` `right` `center` `justify` `start` `end` `initial` `inherit`
+- 详情：
+
+描述的是一段文本中最后一行在被强制换行之前的对齐规则。
+
+- 参考：
+
+  - [Web 开发技术>CSS（层叠样式表）> text-align-last](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-align-last)
