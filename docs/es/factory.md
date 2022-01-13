@@ -79,3 +79,37 @@ function thousandsSeparator(n:number): string {
 
   </CodeGroupItem>
 </CodeGroup>
+
+## 数组操作
+### 数组乱序
+Example: `arrScrambling([1,2,3,4,5,6,7,8,9])`
+<CodeGroup>
+  <CodeGroupItem title="js" active>
+
+```js
+function arrScrambling(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    const randomIndex = Math.round(Math.random() * (arr.length - 1 - i)) + i;
+    [arr[i], arr[randomIndex]] = [arr[randomIndex], arr[i]];
+  }
+  return arr;
+}
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="ts">
+
+```ts
+function arrScrambling<T>(arr:T[]):T[] {
+  for (let i = 0; i < arr.length; i++) {
+    const randomIndex = Math.round(Math.random() * (arr.length - 1 - i)) + i;
+    [arr[i], arr[randomIndex]] = [arr[randomIndex], arr[i]];
+  }
+  return arr;
+}
+console.log(arrScrambling<number>([1, 2, 3, 4, 5, 6, 7]))
+console.log(arrScrambling<string>(['a','b','c','d']))
+```
+
+  </CodeGroupItem>
+</CodeGroup>
