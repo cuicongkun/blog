@@ -113,3 +113,70 @@ console.log(arrScrambling<string>(['a','b','c','d']))
 
   </CodeGroupItem>
 </CodeGroup>
+
+### 数组扁平化
+Example: `flatten([1,2,[3]])`
+<CodeGroup>
+  <CodeGroupItem title="js" active>
+
+```js
+function flatten (arr) {
+  let result = [];
+  for(let i = 0; i < arr.length; i++) {
+    if(Array.isArray(arr[i])) {
+      result = result.concat(flatten(arr[i]));
+    } else {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+console.log(flatten([1,2,[3]]));
+console.log([1,2,[3]].flat(Infinity));
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="ts">
+
+```ts
+function flatten (arr:any[]):any[] {
+  let result:any[]=[];
+  for(let i:number = 0; i < arr.length; i++) {
+    if(Array.isArray(arr[i])) {
+      result = result.concat(flatten(arr[i]));
+    } else {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
+### 数组中获取随机数
+Example: `flatten([1,2,[3]])`
+<CodeGroup>
+  <CodeGroupItem title="js" active>
+
+```js
+function getArrayRandomTheOne(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+console.log(getArrayRandomTheOne([1,2,3,4,5,6,7,8,9,10]))
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="ts">
+
+```ts
+function getArrayRandomTheOne(arr:any[]) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+console.log(getArrayRandomTheOne([1,2,3,4,5,6,7,8,9,10]))
+```
+
+  </CodeGroupItem>
+</CodeGroup>
