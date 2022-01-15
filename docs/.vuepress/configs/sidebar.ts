@@ -1,6 +1,14 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebar: SidebarConfig = {
+  '/es/start/': [
+    {
+      text: '入门学习',
+      children: [
+        '/es/start/index.md'
+      ],
+    }
+  ],
   '/es/': [
     {
       text: '特性学习',

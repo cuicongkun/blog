@@ -9,6 +9,15 @@ export const navbar: NavbarConfig = [
     text: "ECMAScript",
     children: [
       {
+        text: "入门学习",
+        children: [
+          {
+            text: "基本理论",
+            link: "/es/start/index.md",
+          }
+        ],
+      },
+      {
         text: "特性学习",
         children: [
           {
