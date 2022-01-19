@@ -14,7 +14,7 @@ export const navbar: NavbarConfig = [
           {
             text: "基本理论",
             link: "/es/start/index.md",
-          }
+          },
         ],
       },
       {
@@ -25,13 +25,22 @@ export const navbar: NavbarConfig = [
             link: "/es/problems.md",
           },
           {
+            text: "珍藏属性",
+            link: "/es/attribute.md",
+          },
+        ],
+      },
+      {
+        text: "学以致用",
+        children: [
+          {
             text: "工具函数",
             link: "/es/factory.md",
           },
           {
-            text: "珍藏属性",
-            link: "/es/attribute.md",
-          },
+            text: "正则验证",
+            link: "/es/regexp.md",
+          }
         ],
       },
     ],

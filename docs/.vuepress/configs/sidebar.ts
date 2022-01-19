@@ -15,6 +15,7 @@ export const sidebar: SidebarConfig = {
       children: [
         '/es/problems.md',
         '/es/factory.md',
+        '/es/regexp.md',
         '/es/attribute.md',
       ],
     }
