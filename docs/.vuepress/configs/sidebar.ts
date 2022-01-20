@@ -5,7 +5,9 @@ export const sidebar: SidebarConfig = {
     {
       text: '入门学习',
       children: [
-        '/es/start/index.md'
+        '/es/start/index.md',
+        '/es/start/destructuring.md',
+        '/es/start/operators.md',
       ],
     }
   ],
