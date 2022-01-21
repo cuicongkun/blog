@@ -65,8 +65,8 @@ export const navbar: NavbarConfig = [
         text: "预处理语言",
         children: [
           {
-            text: "Scss 预处理语言",
-            link: "/css/scss/",
+            text: "Sass",
+            link: "/css/sass/start.md",
           },
         ],
       },

@@ -55,19 +55,16 @@ export default defineUserConfig<DefaultThemeOptions>({
       "/": {
         navbar,
         sidebar,
-        repo: 'cuicongkun/blog',
-        docsDir: 'docs',
-        // page meta
-        editLinkText: "发现问题，您可以在 GitHub 上编辑此页面内容，感谢您的贡献！",
-        lastUpdatedText: "Last update",
-        contributorsText: "Contributor",
+        repo: "cuicongkun/blog",
+        docsDir: "docs",
+        editLinkText: "发现问题，可在 GitHub 上编辑此页面，感谢贡献！",
+        lastUpdatedText: "更新于",
+        contributorsText: "作者",
 
         // custom containers
         tip: "提示",
         warning: "注意",
         danger: "警告",
-
-        // 404 page
         notFound: [
           "这里什么都没有",
           "我们怎么到这来了？",
@@ -75,8 +72,6 @@ export default defineUserConfig<DefaultThemeOptions>({
           "看起来我们进入了错误的链接",
         ],
         backToHome: "返回首页",
-
-        // a11y
         openInNewWindow: "在新窗口打开",
         toggleDarkMode: "切换夜间模式",
         toggleSidebar: "切换侧边栏",
@@ -88,7 +83,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     [
       "@vuepress/plugin-register-components",
       {
-        componentsDir: path.resolve(__dirname, "./components"),
+        componentsDir: path.resolve(__dirname, "./components/css"),
       },
     ],
     [

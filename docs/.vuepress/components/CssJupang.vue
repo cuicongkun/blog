@@ -19,6 +19,7 @@
 
 
 <style scoped lang="scss">
+
 $cat: rgb(252, 180, 125);
 
 :root {

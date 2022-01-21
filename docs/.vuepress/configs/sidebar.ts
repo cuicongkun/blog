@@ -31,11 +31,14 @@ export const sidebar: SidebarConfig = {
       ],
     }
   ],
-  '/css/scss/': [
+  '/css/sass/': [
     {
-      text: 'SCSS',
+      text: 'Sass',
       children: [
-        '/css/scss/jupang.md',
+        '/css/sass/start.md',
+        '/css/sass/documentation/syntax.md',
+        '/css/sass/documentation/at-rules.md',
+        '/css/sass/jupang.md',
       ],
     }
   ],
