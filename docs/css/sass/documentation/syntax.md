@@ -60,7 +60,7 @@ PS: 也很推荐这种缩进式的语法，更加的简洁直观！
 
 ## 声明
 
-Sass 样式表由一系列语句组成，这些语句被编译之后构建生成的CSS
+Sass 样式表由一系列语句组成，这些语句被编译之后构建生成的 CSS ，SassScript.
 
 ### 通用语句
 
@@ -94,3 +94,32 @@ CSS 语句可以在 Sass 样式表除@function 之外的任何地方使用：
 - 继承属性：`@extend` 只能在样式规则中使用
 
 ## 表达式
+
+### 字面量
+
+最简单的表达式只表示静态值：
+
+- 数字： `12` `100px`
+- 字符串： `Helvetica Neue` `bold`
+- 颜色： `#c6538c` `blue`
+- 布尔值： `true` `false`
+- `null`
+- 值列表： `1.5em 1em 0 2em` `Helvetica,Arial,sans-serif,` `[col1-start]`
+- `background": red` `"foreground": pink`
+
+### 运算符
+
+- `==` 和 `!=`  用来判断两个值是否相同
+- `+`, `-`, `*`, `/`, `%`  对数字进行运算
+- `<`, `<=`, `>`, `>=` 对数字进行比较
+- `and`, `or`, `not` 具有通常的布尔行为
+- `+`, `-`, 和`/` 可用于连接字符串
+- `()` 用于控制操作的优先顺序。
+
+### 其他
+
+- 变量： `$var`
+- 函数调用： `nth($list, 1) ` `var(--main-bg-color)`
+- 特殊函数： `calc(1px + 100%)` `url(http://myapp.com/assets/logo.png)`
+- 父选择器： `&`
+- `value !important`
