@@ -75,7 +75,7 @@ export const navbar: NavbarConfig = [
         children: [
           {
             text: "一些作品",
-            link: "/css/scss/",
+            link: "/css/works/3d-rotate",
           },
         ],
       },

@@ -42,6 +42,15 @@ export const sidebar: SidebarConfig = {
       ],
     }
   ],
+
+  '/css/works/': [
+    {
+      text: 'Css3',
+      children: [
+        '/css/works/3d-rotate.md'
+      ],
+    }
+  ],
   '/vlog/': [
     {
       text: 'VLOG',
