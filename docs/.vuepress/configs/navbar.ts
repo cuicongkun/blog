@@ -15,6 +15,10 @@ export const navbar: NavbarConfig = [
             text: "基本理论",
             link: "/es/start/index.md",
           },
+          {
+            text: "设计模式",
+            link: "/es/js-design-model.md",
+          },
         ],
       },
       {
